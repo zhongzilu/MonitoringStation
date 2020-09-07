@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item"
+    android:minWidth="250dp"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/item_padding"
+    android:paddingTop="@dimen/item_padding"
+    android:paddingEnd="@dimen/item_padding"
+    android:paddingBottom="@dimen/item_padding">
+
+    <TextView
+        android:id="@+id/item1_label"
+        style="@style/ItemTitleTextStyle"
+        android:text="检测项目" />
+
+    <View
+        android:id="@+id/item1_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="#142a49" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_option_height"
+        android:layout_marginTop="@dimen/item_margin"
+        android:background="@drawable/bg_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/ic_noise"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:paddingStart="10dp"
+            android:text="数字气压\n检测中"
+            android:textColor="#1663b4"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/pressureText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/format_pressure"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/item_option_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_option_height"
+        android:layout_marginTop="@dimen/item_margin"
+        android:background="@drawable/bg_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/ic_ultraviolet_rays"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:paddingStart="10dp"
+            android:text="今日紫外线\n检测中"
+            android:textColor="#1663b4"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/ultravioletRaysText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/format_ultraviolet_rays"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/item_option_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_option_height"
+        android:layout_marginTop="@dimen/item_margin"
+        android:background="@drawable/bg_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/ic_pm"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:paddingStart="10dp"
+            android:text="今日PM2.5\n检测中"
+            android:textColor="#1663b4"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/pmText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/format_pm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/item_option_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+rootProject.name='MonitoringStation'
+include ':app', ':serialport-release'

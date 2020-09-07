@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item"
+    android:minWidth="250dp"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/item_padding"
+    android:paddingTop="@dimen/item_padding"
+    android:paddingEnd="@dimen/item_padding"
+    android:paddingBottom="@dimen/item_padding">
+
+    <TextView
+        android:id="@+id/item1_label"
+        style="@style/ItemTitleTextStyle"
+        android:text="风速/风向" />
+
+    <com.zzl.monitoring.station.widget.WindDirectionView
+        android:id="@+id/windDirectionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/wind_direction" />
+
+    <TextView
+        android:id="@+id/windSpeedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="@string/format_wind_speed_text"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+</FrameLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/bg_title" />
+
+        <TextView
+            android:id="@+id/mainTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/format_main_title_text"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+    <include
+        android:id="@+id/include_item1"
+        layout="@layout/include_item1"
+        android:layout_width="@dimen/item_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_title"
+        android:layout_marginStart="@dimen/item_margin"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:layout_marginBottom="@dimen/item_margin" />
+
+    <include
+        android:id="@+id/include_wind_speed"
+        layout="@layout/include_wind_speed"
+        android:layout_width="@dimen/item_width"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_item1"
+        android:layout_marginStart="@dimen/item_margin"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:layout_marginBottom="@dimen/item_margin" />
+
+    <include
+        android:id="@+id/include_air_temperature"
+        layout="@layout/include_air_temperature"
+        android:layout_width="@dimen/item_width"
+        android:layout_height="220dp"
+        android:layout_below="@id/main_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/item_margin"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:layout_marginBottom="@dimen/item_margin" />
+
+    <include
+        android:id="@+id/include_air_moisture"
+        layout="@layout/include_air_moisture"
+        android:layout_width="@dimen/item_width"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_air_temperature"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/item_margin"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:layout_marginBottom="@dimen/item_margin" />
+
+    <include
+        android:id="@+id/include_map"
+        layout="@layout/include_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_title"
+        android:layout_marginStart="@dimen/item_margin"
+        android:layout_marginTop="@dimen/item_margin"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:layout_marginBottom="@dimen/item_margin"
+        android:layout_toStartOf="@id/include_air_temperature"
+        android:layout_toEndOf="@id/include_item1" />
+
+    <include
+        layout="@layout/include_radiation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_map"
+        android:layout_marginStart="@dimen/item_margin"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:layout_marginBottom="@dimen/item_margin"
+        android:layout_toStartOf="@id/include_air_moisture"
+        android:layout_toEndOf="@id/include_wind_speed" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item"
+    android:minWidth="250dp"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/item_padding"
+    android:paddingTop="@dimen/item_padding"
+    android:paddingEnd="@dimen/item_padding"
+    android:paddingBottom="@dimen/item_padding">
+
+    <TextView
+        style="@style/ItemTitleTextStyle"
+        android:gravity="center_horizontal"
+        android:text="简\n易\n总\n辐\n射\n(W/㎡)" />
+
+    <com.zzl.monitoring.station.widget.SimpleTotalRadiationChart
+        android:id="@+id/simpleRadiationChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MonitoringStation</string>
+    <string name="format_pressure">%.2f hPa</string>
+    <string name="format_ultraviolet_rays">%.2f W/㎡</string>
+    <string name="format_pm">%.2f μg/m³</string>
+    <string name="format_main_title_text">· 潇游科技气象站数据中心 ·\n%s</string>
+    <string name="format_wind_speed_text">风速: %.1f m/s</string>
+</resources>
